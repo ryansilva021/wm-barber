@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barbearia - Agendamento</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>WM Barbearia</h1>
+  </header>
+
+  <img src="barber.svg" class="left-login-image" alt="barber">
+
+  <main>
+    <section class="appointment">
+      <h2>Agendamento</h2>
+      <div id="mensagemAgendamento"></div>
+        <form id="agendamentoForm">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" required>
+        <label for="data">Data:</label>
+        <input type="date" id="data" required>
+        <label for="horario">Horário:</label>
+        <input type="time" id="horario" required>
+        <button type="submit">Agendar</button>
+        </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Barbearia. Todos os direitos reservados.</p>
+  </footer>
+  
+ <script src="main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WmBarber Login</title>
+    <link rel="stylesheet" href="./css/signin.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body>
+    <main>
+      <div class="main-login">
+      <div class="left-login">
+      <img src="barber.svg" class="left-login-image" alt="barber">
+        </div>
+        <div class="right-login"></div>
+             <div class="card-login">
+
+                <h1>LOGIN</h1>
+
+      <div class="textfield">              
+          <label for="usuario">Usuário:</label>
+          <input type="text" id="usuario" name="usuario"  placeholder="Usuário">
+      </div>
+
+      <div class="textfield">
+          <label for="senha">Senha:</label>
+          <input type="password" id="senha" name="senha" placeholder="Senha">
+      </div>
+
+      <div class="btn-login">
+          <button class="btn-login" id="btnLogar" onclick="">Login</button>
+      </div>
+
+  </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <script>
+
+const usuarios = [
+    {
+        login: 'admin',
+        pass: 'admin'
+    },
+    {
+        login: 'wemerson_1221',
+        pass: 'wm122132'
+    }
+]
+
+let botao = document.getElementById('btnLogar')
+
+botao.addEventListener('click', function logar(){
+
+    let pegaUsuario = document.getElementById('usuario').value
+    let pegaSenha = document.getElementById('senha').value
+    let validaLogin = false 
+
+    for(let i in usuarios){
+
+        if(pegaUsuario == usuarios[i].login && pegaSenha ==
+        usuarios[i].pass){
+            validaLogin = true
+            break
+        }
+    }
+
+    if(validaLogin == true) {
+        location.href = 'dashboard.html'
+    }else{
+        alert('usuario e senha incorretos')
+    }
+})
+
+    </script>
+  </body>
+</html>
