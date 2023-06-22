@@ -3,6 +3,7 @@
 body {
     margin: 0;
     font-family: 'Noto Sans', sans-serif;
+    
 }
 
 body * {
@@ -20,8 +21,6 @@ body * {
 }
 
 .left-login {
-    width: 60vh;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,25 +30,22 @@ body * {
 .left-login > h1 {
     font-size: 1%;
     color: #00A6FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .left-login-image {
     width: 300px;
-    margin-top: 50%;
 }
 
 .right-login {
-    width: 100vh;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .card-login {
-    width: 0;
-    margin-top: 10%;
-    margin-bottom: 65%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -160,5 +156,9 @@ textfield > label {
     }
     .card-login {
         width: 100%;
+    }
+    #container-card {
+        width: 100%;    
+        padding: 30px;
     }
 }
