@@ -85,6 +85,21 @@ body * {
     box-sizing: border-box;
 }
 
+.textfield .inputPass {
+    padding: 15px 55px 15px 15px;
+}
+
+#eye-container {
+    width: 95%;
+    display: flex;
+    justify-content: end;   
+    
+}
+.textfield img {
+    margin-top: -2.5rem;
+    height: 30px;
+}
+
 textfield > label {
     color: #f0ffffde;
     margin-bottom: 10px;

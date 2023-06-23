@@ -28,7 +28,11 @@
 
      <div class="textfield">
          <label for="senha">Senha:</label>
-         <input type="password" id="senha" name="senha" placeholder="Senha">
+         <input type="password" id="senha" name="senha" placeholder="Senha" class="inputPass">
+         <div id="eye-container">
+                <img src="eye-off.svg" id="eye" alt="eye">
+         </div>
+         
      </div>
 
      <div class="btn-login">
@@ -79,6 +83,22 @@ botao.addEventListener('click', function logar(){
     }
 })
 
+let eye = document.getElementById('eye');
+let inputPass = document.getElementById('senha');
+    let isOn = false;
+
+    eye.addEventListener('click', function() {
+        if (isOn === false) {
+            eye.src = 'eye-on.svg';
+            isOn = true;
+            inputPass.type = 'text';
+
+        } else {
+            eye.src = 'eye-off.svg';
+            isOn = false;
+            inputPass.type = 'password';
+        }
+    });
     </script>
   </body>
 </html>

@@ -58,4 +58,21 @@ document.getElementById("agendamentoForm").addEventListener("submit", function(e
   function limparFormulario() {
     document.getElementById("agendamentoForm").reset();
   }
+
+  let olhoContainer = document.getElementById('txtimg-container')
+  let olhoSvg = document.getElementById('txtimg')
+  const isOn = false
   
+
+  function changeEye() {
+    if (isOn) {
+      olhoSvg.setAttribute('src', './img/eye-on.svg')
+      isOn = false
+    } else {
+      olhoSvg.setAttribute('src', './img/eye-off.svg')
+      isOn = true
+    }
+
+  }
+
+  olho.addEventListener('click', changeEye())
