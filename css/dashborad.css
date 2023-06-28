@@ -129,16 +129,43 @@ footer p {
 
 #menu {
   position: absolute;
-  top: 5rem;
-  right: 0;
+  top: 4rem;
+  right: 1.8rem;
   width: 80%;
-  height: 100vh;
+  height: 75vh;
   background-color: #201b2c;
   display: none;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  border-radius: 0 0 1rem 1rem;
+  border: 5px solid #00A6FF;
+  border-radius: 1rem;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.3rem;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+#menu h1{
+  font-size: 3rem;
+  font-weight: 800; 
+}
+
+#menu input {
+  height: 3rem;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  background-color: #00A6FF;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 800;  
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.8);
+}
+
+#menu input:hover{
+  background-color: #0096d680;
 }
